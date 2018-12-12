@@ -42,7 +42,7 @@ def get_images(img_paths):
     
 
 # Get all the images into numpy array and normalize
-total_tensors = get_images(total_files).astype('float32')/255
+total_images = get_images(total_files).astype('float32')/255
 
 # convert target label to one-hot encoding
 total_targets=np.float64(total_targets)-1
@@ -50,7 +50,7 @@ total_targets = keras.utils.to_categorical(total_targets, 120)
 
 
 #Split data to Train and test
-X_train, X_test, y_train, y_test = train_test_split(total_tensors,
+X_train, X_test, y_train, y_test = train_test_split(total_images,
                                                     total_targets, random_state=9999,
                                                     test_size=0.2, stratify=total_targets)
 ```

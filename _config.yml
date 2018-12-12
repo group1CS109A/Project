@@ -1,0 +1,9 @@
+theme: jekyll-theme-minimal
+title: Dog Breed Classification
+description: Dog Breed Classification
+baseurl:
+markdown: kramdown
+kramdown:
+    math_engine: mathjax
+    input: GFM
+    syntax_highlighter: rouge

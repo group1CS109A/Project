@@ -579,7 +579,7 @@ Trainable params: 2,205,680
 Non-trainable params: 3,984
 _________________________________________________________________
 ```
-##### Loss and accuracy plot of VGG19 model with data augmentation
+##### Loss and accuracy plot of CNN with image augmentation
 
 ![Models](Images/CNN-aug.png) 
 
